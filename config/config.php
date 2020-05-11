@@ -6,6 +6,6 @@
   define("DB_PASS","");
   define("DB_NAME","joblister");
 
-  define("SITE_TITLE", "Joblister");
+  define("SITE_TITLE", "Job Chance");
 
 ?>

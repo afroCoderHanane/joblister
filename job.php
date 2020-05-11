@@ -3,17 +3,22 @@
 ?>
 <?php
 $job = new Job;
-$template= new Template('templates/frontpage.php');
-
-$category = isset($_GET['category']) ?$_GET['category']:null;
-
-if($category){
-    $template->jobs =$jobs->getByCategory($category);
-    $template->title ='Jobs In'. $job->getCategory($category)->name;
-}else{
-  $template->title= 'Latest Job';
-  $template->jobs = $job->getAllJobs();
+if(isset($_POST['del_id']))
+{
+  $del_id =$_POST['del_id'];
+  if($job->delete($del_id))
+  {
+    redirect('index.php', 'job Deleted', 'success');
+  }
+  else{
+    redirect('index.php', 'job Not Deleted', 'error');
+  }
 }
+$template= new Template('templates/job-single.php');
 
-$template->categories =$job->getCategories();
+$job_id = isset($_GET['id']) ?$_GET['id']:null;
+
+
+
+$template->job =$job->getJob($job_id);
 echo $template;

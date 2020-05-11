@@ -4,6 +4,12 @@
       <title> </title>
       <link rel="stylesheet"  href="/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
+      <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -24,4 +30,5 @@
         </nav>
         <h3 class="text-muted"><?php echo SITE_TITLE; ?></h3>
       </div>
+      <?php displayMessage();?>
 
