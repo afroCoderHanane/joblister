@@ -1,8 +1,5 @@
 <br>
 <br>
-     <!--<footer class="footer">
-        <p>&copy; Joblister</p>
-      </footer>-->
       <footer class="page-footer font-small cyan darken-3">
 
 <!-- Footer Elements -->

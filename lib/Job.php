@@ -84,7 +84,7 @@ class Job{
    } else return false;
  }
    public function delete($id){
-            //Insert Query
+            //Delete Query
      $this->db->query("DELETE FRoM jobs WHERE id=$id");
 //execute
      if($this->db->execute())
