@@ -1,8 +1,7 @@
 <?php
 include_once 'config/init.php';
 $_SESSION['username'] = '';
-echo "Your session is ".$_SESSION['username'];
-echo "<br>This is register page";
+
 ?>
 
 <?php
