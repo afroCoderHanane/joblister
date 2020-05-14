@@ -16,10 +16,10 @@ $job = new Job;
 
      if($job->create($data))
      {
-         redirect('index.php', 'your job is posted','success');
+         redirect('homepage.php', 'your job is posted','success');
      }
      else{
-        redirect('index.php', 'Something went wrong','error');
+        redirect('homepage.php', 'Something went wrong','error');
      }
  }
 $template= new Template('templates/job-create.php');

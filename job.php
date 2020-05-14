@@ -8,10 +8,10 @@ if(isset($_POST['del_id']))
   $del_id =$_POST['del_id'];
   if($job->delete($del_id))
   {
-    redirect('index.php', 'job Deleted', 'success');
+    redirect('homepage.php', 'job Deleted', 'success');
   }
   else{
-    redirect('index.php', 'job Not Deleted', 'error');
+    redirect('homepage.php', 'job Not Deleted', 'error');
   }
 }
 $template= new Template('templates/job-single.php');
