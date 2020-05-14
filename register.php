@@ -1,8 +1,7 @@
 <?php
 include_once 'config/init.php';
 $_SESSION['username'] = '';
-echo "Your session is ".$_SESSION['username'];
-echo "<br>This is register page";
+
 ?>
 
 <?php
@@ -39,8 +38,13 @@ if(isset($_POST['submit-button']))
              if($query_run)
              {
                echo"<script> 
-               alert('Registration successful: Return to login Page');
+               alert('Registration successful: You will be redirected to a new page in 5 seconds or Return to login Page');
+               function Redirect(){
+
                window.location.href='login.php';
+               }
+               
+               setTimeout('Redirect()', 5000);
                </script>";   
             }
              else
