@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<link rel ="stylesheet" href="./css/credentials-style.css">
+<link href="https://fonts.googleapis.com/css?family=Bitter|Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <div id = "main-wrapper">
+     <center>
+       <h2> Register </h2>    
+       <i class="logo"></i>  
+      </center>
+
+<form class= "myform" action="register.php" method="post">
+
+    <label><b>First Name</b></label><br>
+    <input name="firstname" type="text" class="inputvalue" placeholder="Enter your first name" required/><br>
+
+    <label><b>Last Name</b></label><br>
+    <input name="lastname" type="text" class="inputvalue" placeholder="Enter your last name" required/><br>
+
+    <label><b>Choose an username</b></label><br>
+    <input name="username" type="text" class="inputvalue" placeholder="Enter username" required/><br>
+
+    <label><b>Choose a password</b></label><br>
+    <input name="password" type="password" class="inputvalue" placeholder="Enter password" required/><br>
+
+    <label><b> Confirm the Password</b></label><br>
+    <input name="cpassword" type="password" class="inputvalue" placeholder="Confirm password"required/><br>
+
+
+    <input name="submit-button" type="submit" id="signup-btn" value ="Register"/><br>
+      <!-- <a href="register.php"> <input type="button" id="register-btn" value ="Sign up"/></a> -->
+    <a href= "login.php"><input type="button" id="back-btn" value ="Return"/></a><br> 
+
+</form>
+</div>
+</body>
+</html>

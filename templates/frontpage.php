@@ -1,9 +1,11 @@
-<?php include 'inc/header.php';?>
+<?php include 'inc/header.php';
+
+?>
 
 
       <div class="jumbotron">
         <h1 class="display-3">Find a Job</h1>
-      <form method="GET" action="index.php">
+      <form method="GET" action="homepage.php">
           <select name= "category" class="form-control">
           <option value= "0">Choose Category </option>
             <?php foreach($categories as $category): ?>

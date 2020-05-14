@@ -34,6 +34,16 @@ class Database {
 		}
 	}
 	
+	public function getConnection($query){
+		$host = $this->host;
+		$user= $this->user;
+		$pass = $this->pass;
+		$dbname = $this->dbname;
+		$con = mysqli_connect("$host","$user","$pass","$dbname");
+		$query_run= mysqli_query($con,$query);
+		return $query_run;
+	}
+
 	// Prepare statement with query
 	public function query($query) {
 		$this->stmt = $this->dbh->prepare($query);
@@ -85,4 +95,5 @@ class Database {
 	public function lastInsertId(){
 		return $this->dbh->lastInsertId();
 	}
+	
 }

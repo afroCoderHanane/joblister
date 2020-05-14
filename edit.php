@@ -17,10 +17,10 @@ $job_id = isset($_GET['id']) ?$_GET['id']:null;
 
      if($job->update($job_id,$data))
      {
-         redirect('index.php', 'your job was updated','success');
+         redirect('homepage.php', 'your job was updated','success');
      }
      else{
-        redirect('index.php', 'Something went wrong','error');
+        redirect('homepage.php', 'Something went wrong','error');
      }
  }
 $template= new Template('templates/job-edit.php');

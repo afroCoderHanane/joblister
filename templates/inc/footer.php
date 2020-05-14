@@ -13,27 +13,27 @@
       <div class="mb-5 flex-center">
 
         <!-- Facebook -->
-        <a class="fb-ic">
+        <a class="fb-ic" href="https://facebook.com" target="_blank">
           <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
         </a>
         <!-- Twitter -->
-        <a class="tw-ic">
+        <a class="tw-ic"href="https://twitter.com" target="_blank">
           <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
         </a>
         <!-- Google +-->
-        <a class="gplus-ic">
+        <a class="gplus-ic" href="https://google.com" target="_blank">
           <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
         </a>
         <!--Linkedin -->
-        <a class="li-ic">
+        <a class="li-ic"href="https://linkedin.com" target="_blank">
           <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
         </a>
         <!--Instagram-->
-        <a class="ins-ic">
+        <a class="ins-ic"href="https://instagram.com" target="_blank">
           <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
         </a>
         <!--Pinterest-->
-        <a class="pin-ic">
+        <a class="pin-ic"href="https://pinterest.com" target="_blank">
           <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
         </a>
       </div>
@@ -47,8 +47,8 @@
 <!-- Footer Elements -->
 
 <!-- Copyright -->
-<div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
-  <a href="hananeDev84.github.com"> HananeDev84</a>
+<div class="footer-copyright text-center py-3">&copy; 2020 Copyright: Group 5 BMCC CS-350
+  <a href="https://github.com/hananeDev84/joblister" target="_blank"> Source Code </a>
 </div>
 <!-- Copyright -->
 
