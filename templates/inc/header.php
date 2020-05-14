@@ -41,12 +41,16 @@ else{
             <li class="nav-item">
               <a class="nav-link" href="create.php">Create listing</a>
             </li>
-            <li class="nav-item">  
-              <a class="nav-link" href="contact.php">Contact</a>
-            </li>
+            
             <li class="nav-item">  
               <a class="nav-link" href="#"><?php echo $_SESSION['username']?></a>
             </li>
+              <!--Logout-->
+             <li class="nav-item">
+                
+                  <a href="../../logout.php" ><i class="fas fa-sign-out-alt fa-lg red-text mr-md-5 mr-3 fa-2x"></i></a>
+                
+             </li>
           </ul>
         </nav>
         <h3 class="text-muted"><?php echo SITE_TITLE; ?></h3>
