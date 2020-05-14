@@ -38,13 +38,13 @@ if(isset($_POST['submit-button']))
              if($query_run)
              {
                echo"<script> 
-               alert('Registration successful: You will be redirected to a new page in 5 seconds or Return to login Page');
+               alert('Registration successful: You will be redirected to a new page in 3 seconds or Return to login Page');
                function Redirect(){
 
                window.location.href='login.php';
                }
                
-               setTimeout('Redirect()', 5000);
+               setTimeout('Redirect()', 3000);
                </script>";   
             }
              else

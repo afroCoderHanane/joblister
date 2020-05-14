@@ -1,12 +1,7 @@
 <?php
 include_once 'config/init.php';
 
-if (isset($_SESSION['username'])) {
-  echo"<script> 
-  alert('Welcome back, ".$_SESSION['username']."!');
-  window.location.href='homepage.php';
-  </script>";
-}
+
 ?>
 
 <?php
@@ -34,7 +29,9 @@ if(isset($_POST['login']))
       $row = mysqli_fetch_array($query_run);
       $_SESSION['username']= $username;
       $_SESSION['role'] = $row['role'];
-       echo "<script> alert('Password Matched - Logging In'); window.location.href='homepage.php';</script>";
+     
+       echo "<script>  alert('Welcome ".$_SESSION['username']."!');
+       window.location.href='homepage.php';</script>";
      }
      else
      {
