@@ -1,5 +1,12 @@
 <?php
 include_once 'config/init.php';
+
+if (isset($_SESSION['username'])) {
+  echo"<script> 
+  alert('Welcome back, ".$_SESSION['username']."!');
+  window.location.href='homepage.php';
+  </script>";
+}
 ?>
 
 <?php
@@ -46,5 +53,4 @@ if(isset($_POST['login']))
 <?php
 $template= new Template('templates/job-login.php');
 echo $template;
-
 ?>
